@@ -1,0 +1,91 @@
+# Reglas de Desarrollo de Código
+# ============================
+
+# Operadores Permitidos
+# --------------------
+# Operadores aritméticos básicos:
+# + (suma)
+# - (resta)
+# * (multiplicación)
+# / (división)
+# % (módulo)
+# ** (potencia)
+
+# Operadores de comparación:
+# == (igual)
+# != (diferente)
+# > (mayor que)
+# < (menor que)
+# >= (mayor o igual que)
+# <= (menor o igual que)
+
+# Estructuras de Control Permitidas
+# --------------------------------
+# if
+# elif
+# else
+# for
+# while
+# range()
+
+# Estructuras de Datos Permitidas
+# ------------------------------
+# Listas:
+# - Creación: lista = [1, 2, 3]
+# - Acceso: lista[0]
+# - Modificación: lista[0] = 5
+# - Longitud: len(lista)
+# - Agregar: lista.append(4)
+# - Eliminar: del lista[0]
+
+# Estructuras NO Permitidas
+# ------------------------
+# No usar métodos de string como:
+# - split()
+# - join()
+# - replace()
+# - strip()
+# - etc.
+
+# No usar funciones avanzadas como:
+# - map()
+# - filter()
+# - reduce()
+# - lambda
+# - list comprehensions
+
+# No usar diccionarios:
+# - No usar {}
+# - No usar dict()
+# - No usar .keys()
+# - No usar .values()
+# - No usar .items()
+
+# No usar librerías externas para operaciones básicas
+
+# Ejemplos de Código Permitido
+# ---------------------------
+# for i in range(10):
+#     if i % 2 == 0:
+#         print(i)
+#
+# while x > 0:
+#     x = x - 1
+#
+# if a > b:
+#     resultado = a + b
+# elif a < b:
+#     resultado = a - b
+# else:
+#     resultado = a * b
+#
+# # Ejemplo con listas
+# numeros = [1, 2, 3, 4, 5]
+# for i in range(len(numeros)):
+#     numeros[i] = numeros[i] * 2
+
+# Objetivo
+# --------
+# El objetivo es desarrollar código usando solo operadores y estructuras básicas,
+# lo que ayuda a entender mejor los fundamentos de la programación y el
+# funcionamiento interno de las operaciones. 
