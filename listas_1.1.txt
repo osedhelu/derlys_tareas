@@ -1,0 +1,19 @@
+def invertirLista(longitud):
+    for i in range(longitud // 2):
+        list_1[i], list_1[longitud - i - 1] = list_1[longitud - i - 1], list_1[i]
+    return list_1
+
+N = int(input('Ingrese el número de elementos de la lista: '))
+list_1 = []
+for i in range(N):
+    i = input('Ingresa el primer elemento: ')
+    list_1.append(i)
+
+longitud = len(list_1)
+
+print('La lista orginal es: ', list_1)
+
+list_1 = invertirLista(longitud)
+
+print('La lista invertida es: ', list_1)
+

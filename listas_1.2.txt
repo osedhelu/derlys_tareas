@@ -1,0 +1,16 @@
+N = int(input('Ingrese el número de elementos de la lista '))
+list = []
+sumatoria = 0
+productoria = 1
+
+for i in range(N):
+        n = int(input('Ingrese un número: '))
+        list.append(n)
+        if n % 7 == 0:
+            sumatoria += n
+        if n < 0:
+            productoria *= n
+
+print('La suma de los números múltiplos de 7 es: ', sumatoria)
+print('La multiplicación de los números negativos es: ', productoria)
+print(list)

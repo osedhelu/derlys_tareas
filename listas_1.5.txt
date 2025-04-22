@@ -1,0 +1,31 @@
+
+def Codigos(asignatura):
+    lista = []
+    print(f"\nIngrese los códigos de estudiantes que ganaron {asignatura}:")
+    print("Ingrese 'fin' para terminar")
+    while True:
+        entrada = input("Ingrese un código: ")
+        if entrada == "fin":
+            break
+        lista.append(int(entrada))
+    return lista
+
+matematicas = Codigos("Matemáticas")
+fisica = Codigos("Física")
+
+ganados = []
+
+for codigo in matematicas:
+   
+    for codigo_fisica in fisica:
+        if codigo == codigo_fisica:
+            ganados.append(codigo)
+            break  
+
+
+print("\nEstudiantes que ganaron ambas asignaturas:")
+if len(ganados) > 0:
+    for i in range(len(ganados)):
+        print(f"{ganados[i]}")
+else:
+    print("No hay estudiantes que hayan ganado ambas asignaturas") 

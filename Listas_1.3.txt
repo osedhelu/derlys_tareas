@@ -1,0 +1,46 @@
+
+def ingresarListas(nombre):
+    lista = []
+    print(f"\nIngrese los elementos de la lista {nombre}:")
+    print("Ingrese 'fin' para terminar")
+    while True:
+        entrada = input("Ingrese un número: ")
+        if entrada == "fin":
+            break
+        lista.append(int(entrada))
+    return lista
+
+
+A = ingresarListas("A")
+B = ingresarListas("B")
+
+
+if len(A) != len(B):
+    print("Error: Las listas deben tener el mismo tamaño")
+    exit()
+
+
+M = len(A)
+
+C = [0] * M
+
+
+for i in range(M):
+    
+    if i % 2 == 0:  
+        C[i] = A[i] + B[i] - 2
+    else:  
+        C[i] = A[i] - B[i] + 7
+
+
+print("\nLista A:")
+for i in range(M):
+    print(f"Posición {i+1}: {A[i]}")
+
+print("\nLista B:")
+for i in range(M):
+    print(f"Posición {i+1}: {B[i]}")
+
+print("\nLista C:")
+for i in range(M):
+    print(f"Posición {i+1}: {C[i]}") 

@@ -53,6 +53,7 @@
 # - reduce()
 # - lambda
 # - list comprehensions
+# - try/except
 
 # No usar diccionarios:
 # - No usar {}
