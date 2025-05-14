@@ -1,0 +1,43 @@
+def analizar_tablero(tablero):
+    num_fichas_azules = 0
+    num_posiciones_vacias = 0
+    num_fichas_rojas = 0 
+    
+    print("\nAnálisis del Tablero:") 
+    for fila in tablero:
+        for celda in fila:
+            if celda == 1:
+                num_fichas_azules = num_fichas_azules + 1
+            elif celda == 2:
+                num_fichas_rojas = num_fichas_rojas + 1
+            elif celda == 3:
+                num_posiciones_vacias = num_posiciones_vacias + 1
+
+    num_total_fichas = num_fichas_azules + num_fichas_rojas
+
+    print(f"Número de fichas azules: {num_fichas_azules}")
+    print(f"Número de posiciones vacías: {num_posiciones_vacias}")
+    print(f"Número total de fichas: {num_total_fichas}")
+
+def ingresar_tablero_usuario():
+    print("\n--- Ingreso de datos del Tablero ---")
+    num_filas = int(input("Ingrese el número de filas del tablero: "))
+    num_columnas = int(input("Ingrese el número de columnas del tablero: "))
+
+    tablero_nuevo = []
+    for i in range(num_filas):
+        fila_actual = []
+        print(f"\n--- Fila {i + 1} ---")
+        for j in range(num_columnas):
+        
+            entrada_usuario = input(f"Ingrese valor para celda ({i + 1},{j + 1}): ")
+           
+            valor_celda = int(entrada_usuario)
+            fila_actual.append(valor_celda)
+        tablero_nuevo.append(fila_actual)
+    return tablero_nuevo
+
+mi_tablero = ingresar_tablero_usuario()
+analizar_tablero(mi_tablero)
+
+    
