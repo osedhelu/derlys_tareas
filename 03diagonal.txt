@@ -1,0 +1,14 @@
+
+
+M = int(input("Ingrese el tamaño de la matriz cuadrada M: "))
+
+matriz = [[1 for _ in range(M)] for _ in range(M)]
+
+for i in range(M):
+    for j in range(M):
+        if i == j or j == M - 1 - i:
+            matriz[i][j] = 0
+
+print("Matriz con ceros en las diagonales:")
+for fila in matriz:
+    print(fila)
