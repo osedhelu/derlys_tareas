@@ -1,0 +1,55 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Reglas de Desarrollo de Código en Python Básico
+
+## Operadores Permitidos
+- Aritméticos: +, -, *, /, %, **
+- Comparación: ==, !=, >, <, >=, <=
+
+## Estructuras de Control Permitidas
+- if, elif, else
+- for, while
+- range()
+
+## Estructuras de Datos Permitidas
+- Listas:
+  - Creación: lista = [1, 2, 3]
+  - Acceso: lista[0]
+  - Modificación: lista[0] = 5
+  - Longitud: len(lista)
+  - Agregar: lista.append(4)
+  - Eliminar: del lista[0]
+
+## Estructuras y Funciones NO Permitidas
+- Métodos de string: split(), join(), replace(), strip(), etc.
+- Funciones avanzadas: map(), filter(), reduce(), lambda, list comprehensions, try/except
+- Diccionarios: {}, dict(), .keys(), .values(), .items()
+- No usar librerías externas para operaciones básicas
+
+## Ejemplos de Código Permitido
+```python
+for i in range(10):
+    if i % 2 == 0:
+        print(i)
+
+while x > 0:
+    x = x - 1
+
+if a > b:
+    resultado = a + b
+elif a < b:
+    resultado = a - b
+else:
+    resultado = a * b
+
+# Ejemplo con listas
+numeros = [1, 2, 3, 4, 5]
+for i in range(len(numeros)):
+    numeros[i] = numeros[i] * 2
+```
+
+## Objetivo
+El objetivo es desarrollar código usando solo operadores y estructuras básicas, lo que ayuda a entender mejor los fundamentos de la programación y el funcionamiento interno de las operaciones.
